@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxi Estates – Find Your Dream Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">◈</span>
+        <span class="logo__text">Luxi<strong>Estates</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="listings.html" class="nav__link">Listings</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="contact.html" class="btn btn--outline nav__cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="homebg">
+    </div>
+    <div class="container homecontent">
+      <p class="home__eyebrow fade-up">Premium Real Estate</p>
+      <h1 class="home__title fade-up">Find the Home<br /><em>You Deserve</em></h1>
+      <p class="home__sub fade-up">Discover handpicked luxury properties in prime locations.<br />Your perfect home is just a search away.</p>
+      <div class="home__actions fade-up">
+        <a href="listings.html" class="btn btn--primary">Browse Listings</a>
+        <a href="about.html" class="btn btn--ghost">How It Works</a>
+      </div>
+    </div>
+    <div class="home__search fade-up">
+      <div class="container">
+        <form class="search-bar" onsubmit="handleSearch(event)">
+          <div class="search-bar__group">
+            <label>Location</label>
+            <input type="text" placeholder="City, neighborhood..." />
+          </div>
+          <div class="search-bar__group">
+            <label>Property Type</label>
+            <select>
+              <option>All Types</option>
+              <option>Villa</option>
+              <option>Apartment</option>
+              <option>Penthouse</option>
+              <option>Townhouse</option>
+            </select>
+          </div>
+          <div class="search-bar__group">
+            <label>Price Range</label>
+            <select>
+              <option>Any Price</option>
+              <option>Under ₹50L</option>
+              <option>₹50L – ₹1Cr</option>
+              <option>₹1Cr – ₹3Cr</option>
+              <option>Above ₹3Cr</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary search-bar__btn">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="1200">0</span><span class="stat-card__suffix">+</span>
+        <p>Properties Listed</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="850">0</span><span class="stat-card__suffix">+</span>
+        <p>Happy Families</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="15">0</span><span class="stat-card__suffix">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="98">0</span><span class="stat-card__suffix">%</span>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Featured</p>
+        <h2 class="section__title">Premium Properties</h2>
+        <p class="section__sub">Curated selections from our finest listings</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+              <img src="images/v1.jpg" class="prop-card__img">
+        
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Villa</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">Serenova Grand Villa</h3>
+            <p class="prop-card__loc">◎ Whitefield, Bangalore</p>
+            <p class="prop-card__price">₹ 3.2 Cr</p>
+            <div class="prop-card__meta">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 3,200 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+              <img src="images/v1.jpg" class="prop-card__img">
+            <span class="prop-card__badge badge--rent">For Rent</span>
+            <span class="prop-card__type">Apartment</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">Skyline Residences</h3>
+            <p class="prop-card__loc">◎ Koramangala, Bangalore</p>
+            <p class="prop-card__price">₹ 85,000 <span>/mo</span></p>
+            <div class="prop-card__meta">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 1,800 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+      <img src="images/v3.webp" class="prop-card__img">
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Penthouse</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">Horizon Penthouse</h3>
+            <p class="prop-card__loc">◎ Indiranagar, Bangalore</p>
+            <p class="prop-card__price">₹ 5.8 Cr</p>
+            <div class="prop-card__meta">
+              <span>🛏 5 Beds</span>
+              <span>🚿 4 Baths</span>
+              <span>📐 4,500 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/prop4.jpg" alt="Townhouse" class="prop-card__img" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <img src="images/v1.jpg" class="prop-card__img" />
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Townhouse</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">Cedarwood Townhomes</h3>
+            <p class="prop-card__loc">◎ Electronic City, Bangalore</p>
+            <p class="prop-card__price">₹ 1.6 Cr</p>
+            <div class="prop-card__meta">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 2,200 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/prop5.jpg" alt="Studio" class="prop-card__img" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+             <img src="images/v2.webp" class="prop-card__img" />
+            <span class="prop-card__badge badge--rent">For Rent</span>
+            <span class="prop-card__type">Studio</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">The Urban Studio</h3>
+            <p class="prop-card__loc">◎ HSR Layout, Bangalore</p>
+            <p class="prop-card__price">₹ 28,000 <span>/mo</span></p>
+            <div class="prop-card__meta">
+              <span>🛏 1 Bed</span>
+              <span>🚿 1 Bath</span>
+              <span>📐 620 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/prop6.jpg" alt="Duplex" class="prop-card__img" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <span class="prop-card__badge">For Sale</span>
+             <img src="images/v3.webp" class="prop-card__img" />
+            <span class="prop-card__type">Duplex</span>
+          </div>
+          <div class="prop-card__body">
+            <h3 class="prop-card__title">Maison Duplex</h3>
+            <p class="prop-card__loc">◎ Sarjapur Road, Bangalore</p>
+            <p class="prop-card__price">₹ 2.4 Cr</p>
+            <div class="prop-card__meta">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 2,800 sqft</span>
+            </div>
+            <a href="listings.html" class="btn btn--outline prop-card__btn">View Details</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="section__cta fade-up">
+        <a href="listings.html" class="btn btn--primary">View All Listings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us">
+    <div class="container why-us__inner">
+      <div class="why-us__text fade-up">
+        <p class="section__eyebrow">Why Luxi</p>
+        <h2 class="section__title">A Smarter Way to<br />Find Real Estate</h2>
+        <p class="section__sub">We combine technology, expertise, and personal care to deliver a seamless property experience.</p>
+        <a href="about.html" class="btn btn--primary" style="margin-top:2rem">Learn More</a>
+      </div>
+      <div class="why-us__features fade-up">
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Verified Listings</h4>
+            <p>Every property is personally inspected and legally verified before being listed.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Expert Guidance</h4>
+            <p>Our agents provide end-to-end support, from search to registration.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Transparent Pricing</h4>
+            <p>No hidden fees. What you see is what you pay – simple and honest.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Market Intelligence</h4>
+            <p>Access real-time data to make informed investment decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Testimonials</p>
+        <h2 class="section__title">Voices of Our Clients</h2>
+      </div>
+      <div class="testi-grid fade-up">
+        <div class="testi-card">
+          <p class="testi-card__quote">"Luxi Estates made buying our first home completely stress-free. The team was responsive, knowledgeable, and genuinely cared about finding us the right fit."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">AK</div>
+            <div>
+              <strong>Arjun</strong>
+              <span>Purchased in Whitefield</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"I was relocating from Mumbai and needed a rental quickly. Luxi's team found me three perfect options within 48 hours. Exceptional service!"</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">PM</div>
+            <div>
+              <strong>Priya</strong>
+              <span>Renting in Koramangala</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"Sold my villa at the best market price in just three weeks. The valuation was spot-on and the marketing was excellent. Highly recommended!"</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">RS</div>
+            <div>
+              <strong>Ravi</strong>
+              <span>Sold in Indiranagar</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner fade-up">
+    <div class="container cta-banner__inner">
+      <div>
+        <h2>Ready to Find Your Dream Home?</h2>
+        <p>Talk to our experts today — no obligation, just good advice.</p>
+      </div>
+      <a href="contact.html" class="btn btn--primary">Contact Us Now</a>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__icon">◈</span>
+          <span class="logo__text">Luxi<strong>Estates</strong></span>
+        </a>
+        <p>Your trusted partner in finding the perfect property. Quality, trust, and excellence — always.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h5>Property Types</h5>
+        <a href="listings.html">Villas</a>
+        <a href="listings.html">Apartments</a>
+        <a href="listings.html">Penthouses</a>
+        <a href="listings.html">Townhouses</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <p>📍 42, MG Road, Bangalore – 560001</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ hello@Luxi.in</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+     <p>© 2026 Luxi Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
